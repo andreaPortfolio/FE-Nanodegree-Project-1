@@ -1,14 +1,20 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 1em auto;
-    width: 1024px;
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* header */
+body {
+    font-family: "Roboto", sans-serif;
+}
 
 img {
     max-width: 100%;
 }
+
+/* header */
 
 header {
     border-bottom: solid 3px #dddddd;
@@ -50,7 +56,6 @@ header h3 {
     margin-top: 2em;
 }
 
-
 /* portfolio */
 
 .portfolio {
@@ -59,7 +64,7 @@ header h3 {
 }
 
 .works {
-    width: calc((100% - 4em)/3);
+    width: calc((100% - 4em) / 3);
     margin: 1em 2em 0 0;
     text-align: center;
 }
@@ -75,10 +80,6 @@ header h3 {
     color: #ddd;
 }
 
-.portfolio img {
-    height: 250px;
-}
-
 .portfolio h2 {
     font-weight: normal;
     font-size: 2.4em;
@@ -87,17 +88,12 @@ header h3 {
     text-transform: uppercase;
 }
 
-.portfolio a, a:visited {
+.portfolio a,
+a:visited {
     text-decoration: none;
     font-size: 0.8em;
     color: #ccc;
 }
-
-.img-large {
-    height: 250px;
-    width: 350px;
-}
-
 
 /* footer */
 
@@ -131,7 +127,6 @@ footer p {
 
 /* brandico */
 
-
 [class*="brandico-"]:before {
     font-family: 'brandico', sans-serif;
     font-size: 40px;
@@ -140,11 +135,7 @@ footer p {
 
 /* media query */
 
-@media  screen and (min-width:900px) and (max-width:1024px) {
-
-    .portfolio img {
-        height: 200px;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
 
     .portfolio h2 {
         font-weight: normal;
@@ -156,12 +147,12 @@ footer p {
         font-size: 0.8em;
     }
 
-    body {
-        width: 900px;
+    .container {
+        width: 1024px;
     }
 }
 
-@media screen and (min-width:650px) and (max-width:899px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
 
     header h1 {
         font-size: 2.2em;
@@ -169,10 +160,6 @@ footer p {
 
     header h3 {
         font-size: 0.6em;
-    }
-
-    .portfolio img {
-        height: 150px;
     }
 
     .portfolio h2 {
@@ -183,8 +170,8 @@ footer p {
         font-size: 0.7em;
     }
 
-    body {
-        width: 650px;
+    .container {
+        width: 640px;
     }
 
     .fatured-work {
@@ -197,10 +184,10 @@ footer p {
     }
 }
 
-@media screen and (max-width:649px) {
+@media screen and (max-width: 639px) {
 
     header h1 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     header h3 {
@@ -209,6 +196,7 @@ footer p {
 
     .logo {
         margin-left: 10px;
+        width: 30px;
     }
 
     .portfolio {
@@ -220,15 +208,11 @@ footer p {
     }
 
     .portfolio h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .portfolio a {
         font-size: 0.7em;
-    }
-
-    body {
-        width: 500px;
     }
 
     .main-img {
@@ -241,7 +225,7 @@ footer p {
     }
 
     .fatured-work {
-        font-size: 2em;
+        font-size: 1.9em;
         text-align: center;
     }
 
